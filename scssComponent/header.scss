@@ -1,0 +1,119 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- Header ------------------------------- */
+header {
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $primary-background-color-2;
+}
+
+/* ----- Navigation Bar ------------------------------- */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-container('sm') {
+        max-width: 540px;
+    }
+    @include media-container('md') {
+        max-width: 720px;
+    }
+    @include media-container('lg') {
+        max-width: 960px;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* ----- Navbar ------------------------------- */
+.navbar {
+    padding: 0.5rem 1rem;
+    color: $primary-text-color;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* ----- Nav Logo ------------------------------- */
+.fa-robot {
+    color: $secondary-color-2;
+    font-size: 2em;
+    margin-right: 4px;
+}
+
+.text-logo {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: $primary-text-color;
+    background-color: $secondary-color-2;
+    padding: 2px 2px 2px 4px;
+    border-radius: 4px;
+}
+
+/* ----- Nav Links ------------------------------- */
+.navbar__links {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+
+    ul {
+        list-style: none;
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 0 0.5rem;
+
+            a {
+                text-decoration: none;
+                color: $primary-text-color;
+                font-weight: bold;
+                font-size: 1.125rem;
+                line-height: 1.67em;
+                cursor: pointer;
+                background-color: $secondary-background-color;
+            }
+
+            a:hover {
+                color: $secondary-color-2;
+            }
+
+        }
+    }
+}
+
+.navbar__link.active {
+    color: $primary-text-color;
+    text-decoration: underline;
+    text-underline-offset: 14px;
+    text-decoration-color: $primary-text-color;
+    text-decoration-style: solid;
+    text-decoration-thickness: 1.8px;
+}
