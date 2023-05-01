@@ -1,18 +1,4 @@
-/* -----Base Style----------------------------------- */
-* {
-  margin: 0 auto;
-  padding: 0;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-}
-
-/* -----Header Style----------------------------------- */
-/* ----- Header ------------------------------- */
+/* ----- Navbar ------------------------------- */
 header {
   padding: 10px 0;
   width: 100%;
@@ -24,7 +10,6 @@ header {
   background-color: #313741;
 }
 
-/* ----- Navigation Bar ------------------------------- */
 .container {
   width: 100%;
   padding-right: 15px;
@@ -58,7 +43,6 @@ header {
   margin-left: -15px;
 }
 
-/* ----- Navbar ------------------------------- */
 .navbar {
   padding: 0.5rem 1rem;
   color: #FFFFFF;
@@ -70,27 +54,6 @@ header {
   flex-wrap: wrap;
 }
 
-/* ----- Nav Logo ------------------------------- */
-.fa-robot {
-  color: #0bceaf;
-  font-size: 2em;
-  margin-right: 4px;
-}
-
-.text-logo {
-  margin: 0;
-  padding: 0;
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
-  font-weight: bold;
-  color: #FFFFFF;
-  background-color: #0bceaf;
-  padding: 2px 2px 2px 4px;
-  border-radius: 4px;
-}
-
-/* ----- Nav Links ------------------------------- */
 .navbar__links {
   display: flex;
   flex-basis: auto;
@@ -121,14 +84,10 @@ header {
 }
 
 .navbar__links ul li a:hover {
-  color: #0bceaf;
+  color: #009688;
 }
 
 .navbar__link.active {
-  color: #FFFFFF;
-  text-decoration: underline;
-  text-underline-offset: 14px;
-  text-decoration-color: #FFFFFF;
-  text-decoration-style: solid;
-  text-decoration-thickness: 1.8px;
+  color: #009688;
+  border-bottom: 2px solid #FFFFFF;
 }

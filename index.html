@@ -4,43 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--description-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fred Liao personal cv/resume for professional website.">
     <title>Fred's Portfolio</title>
+    <!-- Stylesheet CSS -->
     <link rel="stylesheet" href="style.css" />
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/47d2a55e41.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <!-- Navigation Bar -->
-        <div class="navbar">
-            <!-- Nav Logo -->
-            <div class="navbar__logo">
-                <img src="" alt="Fred's Portfolio" />
-            </div>
-            <!-- Nav Links -->
-            <div class="navbar__links">
-                <ul>
-                    <li>
-                        <a class="navbar__link" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a class="navbar__link" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="navbar__link" href="#experience">Experience</a>
-                    </li>
-                    <li>
-                        <a class="navbar__link" href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a class="navbar__link" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="navbar__link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="row">
+                <div class="navbar">
+                    <!-- Nav Logo -->
+                    <div class="navbar__logo">
+                        <i class="fa-solid fa-robot"></i>
+                        <span class="text-logo">Fred</span>
+                    </div>
+                    <!-- Nav Links -->
+                    <div class="navbar__links">
+                        <ul id="navbar__link-lists">
+                            <li>
+                                <a class="navbar__link" href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a class="navbar__link" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="navbar__link" href="#experience">Experience</a>
+                            </li>
+                            <li>
+                                <a class="navbar__link" href="#education">Education</a>
+                            </li>
+                            <li>
+                                <a class="navbar__link" href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a class="navbar__link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -103,6 +113,7 @@
                 <div class="about__info">
                     <!-- About Title -->
                     <h2>About Me</h2>
+                    <div id="myElement"></div>
                     <!-- About Me Description -->
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -402,6 +413,8 @@
             </a>
         </button>
     </div>
-</body>
 
+    <!-- Navbar JS -->
+    <script src="./js/navbar.js"></script>
+</body>
 </html>
