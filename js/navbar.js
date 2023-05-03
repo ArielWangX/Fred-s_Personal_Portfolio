@@ -1,3 +1,4 @@
+// Navbar Links --------------------------------------
 // Add underline when a link is actived,
 // and remove underline when the link is not actived.
 const linkLists = document.querySelector("#navbar__link-lists");
@@ -16,3 +17,39 @@ linkLists.addEventListener("click", function (event) {
     activeLink = null;
   }
 });
+
+
+// Display and Close Overlay and Vartical Navbar Links -----------------------------------
+// When click the hamburger navbar, display whole screen overlay and vertical navbar links.
+const hamburger = document.querySelector(".navbar__toggle");
+const overlay = document.querySelector(".overlay");
+const navbarVertical = document.querySelector(".navbar__links");
+
+hamburger.addEventListener("click", function () {
+  overlay.classList.toggle("visible");
+  navbarVertical.classList.toggle("visible");
+  hamburger.style.display = "none";
+});
+
+// When click outside of vertical navbar, close overlay and vertical navbar links.
+closeVerticalNavbarOnClickOutside(hamburger, overlay, navbarVertical);
+
+
+// Function: Close Overlay and Vartical Navbar Links -----------------------------------
+// When click outside of vertical navbar, close overlay and vertical navbar links.
+function closeVerticalNavbarOnClickOutside(
+  hamburgerSelector,
+  overlaySelector,
+  navbarSelector
+) {
+  overlaySelector.addEventListener("click", function (event) {
+    const isNavbarVisible = navbarSelector.classList.contains('visible');
+    const isClickInsideNavbar = navbarSelector.contains(event.target);
+
+    if (isNavbarVisible && !isClickInsideNavbar) {
+      navbarSelector.classList.remove("visible");
+      overlaySelector.classList.remove("visible");
+      hamburgerSelector.style.display = "flex";
+    }
+  });
+}

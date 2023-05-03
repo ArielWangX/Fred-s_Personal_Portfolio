@@ -1,24 +1,63 @@
 // screen size breakpoint
-$screen-sm: 576px;
-$screen-md: 768px;
-$screen-lg: 992px;
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 992px;
+
+$screen-lg-max: 991px;
 
 // media-container mixin
 @mixin media-container($breakpoint) {
     @if $breakpoint =='sm' {
-        @media (min-width: $screen-sm) {
+        @media (min-width: $screen-sm-min) {
             @content;
         }
     }
 
     @else if $breakpoint =='md' {
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-md-min) {
             @content;
         }
     }
 
     @else if $breakpoint =='lg' {
-        @media (min-width: $screen-lg) {
+        @media (min-width: $screen-lg-min) {
+            @content;
+        }
+    }
+}
+
+// media-hamburgerNavbar mixin
+@mixin media-hamburger($breakpoint) {
+    @if $breakpoint == 'hamburger' {
+        @media (max-width: $screen-lg-max) {
+            .navbar__toggle {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 18px;
+                width: 24px;
+                cursor: pointer;
+                background-color: transparent;
+                border: 1px solid transparent;
+                margin-right: 15px;
+                margin-left: 15px;
+              }
+            
+            .navbar__toggle span {
+                height: 2px;
+                width: 100%;
+                background-color: $primary-text-color;
+                border-radius: 2px;
+            }
+
+            .navbar__links {
+                display: none;
+            }
+
+            .navbar__logo {
+                margin-left: 0px;
+            }
+
             @content;
         }
     }
