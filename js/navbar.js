@@ -30,10 +30,24 @@ hamburger.addEventListener("click", function () {
   navbarVertical.classList.toggle("visible");
   hamburger.style.display = "none";
 });
-
 // When click outside of vertical navbar, close overlay and vertical navbar links.
 closeVerticalNavbarOnClickOutside(hamburger, overlay, navbarVertical);
 
+
+// Listen for scroll events on the window
+const header = document.querySelector('header');
+const headerPosition = header.offsetTop;
+
+window.addEventListener('scroll', function() {
+  if (this.window.pageYOffset > headerPosition) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
+// Function ***************************************************************************
 
 // Function: Close Overlay and Vartical Navbar Links -----------------------------------
 // When click outside of vertical navbar, close overlay and vertical navbar links.

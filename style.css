@@ -11,6 +11,12 @@ html {
   font-size: 16px;
 }
 
+body {
+  background-color: #100e17;
+  opacity: 0.9;
+  color: #FFFFFF;
+}
+
 /* -----Header Style----------------------------------- */
 /* ----- Header ------------------------------- */
 header {
@@ -20,8 +26,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  height: 68px;
   z-index: 99;
-  background-color: #313741;
+  background-color: #100e17;
+}
+
+header.scrolled {
+  background-color: #202026;
 }
 
 /* ----- Navigation Bar ------------------------------- */
@@ -218,3 +229,11 @@ header {
     transform: translateX(320px);
   }
 }
+
+/* -----Main Style------------------------------------- */
+main {
+  margin-top: 68px;
+}
+
+/* -----Home Style------------------------------------- */
+/* ----- Home ------------------------------- */

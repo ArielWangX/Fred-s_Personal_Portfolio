@@ -17,6 +17,10 @@ header {
     background-color: $primary-background-color-2;
 }
 
+header.scrolled {
+    background-color: $primary-background-color-1;
+}
+
 /* ----- Navigation Bar ------------------------------- */
 .overlay {
     position: fixed;
