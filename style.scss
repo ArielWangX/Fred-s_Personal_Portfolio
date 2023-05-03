@@ -1,3 +1,6 @@
+// Import color
+@import './scssComponent/colors.scss';
+
 /* -----Base Style----------------------------------- */
 * {
     margin: 0 auto;
@@ -11,5 +14,19 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: $primary-background-color-2;
+    opacity: 0.9;
+    color: $primary-text-color;
+}
+
 /* -----Header Style----------------------------------- */
 @import './scssComponent/header.scss';
+
+/* -----Main Style------------------------------------- */
+main {
+    margin-top: 68px;
+}
+
+/* -----Home Style------------------------------------- */
+@import './scssComponent/home.scss';
