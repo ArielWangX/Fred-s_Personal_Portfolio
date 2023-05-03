@@ -42,14 +42,14 @@ function closeVerticalNavbarOnClickOutside(
   overlaySelector,
   navbarSelector
 ) {
-  overlaySelector.addEventListener("click", function (event) {
+  overlaySelector.addEventListener('click', function (event) {
     const isNavbarVisible = navbarSelector.classList.contains('visible');
     const isClickInsideNavbar = navbarSelector.contains(event.target);
 
     if (isNavbarVisible && !isClickInsideNavbar) {
-      navbarSelector.classList.remove("visible");
-      overlaySelector.classList.remove("visible");
-      hamburgerSelector.style.display = "flex";
+      navbarSelector.classList.remove('visible');
+      overlaySelector.classList.remove('visible');
+      hamburgerSelector.style.display = '';
     }
   });
 }
