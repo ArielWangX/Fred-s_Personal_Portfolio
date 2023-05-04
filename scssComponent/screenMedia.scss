@@ -4,22 +4,29 @@ $screen-md-min: 768px;
 $screen-lg-min: 992px;
 
 $screen-lg-max: 991px;
+$screen-md-max: 767px;
 
 // media-container mixin
 @mixin media-container($breakpoint) {
-    @if $breakpoint =='sm' {
+    @if $breakpoint == 'sm-min' {
         @media (min-width: $screen-sm-min) {
             @content;
         }
     }
 
-    @else if $breakpoint =='md' {
+    @else if $breakpoint =='md-min' {
         @media (min-width: $screen-md-min) {
             @content;
         }
     }
 
-    @else if $breakpoint =='lg' {
+    @else if $breakpoint =='md-max' {
+        @media (max-width: $screen-md-max) {
+            @content;
+        }
+    } 
+
+    @else if $breakpoint =='lg-min' {
         @media (min-width: $screen-lg-min) {
             @content;
         }
