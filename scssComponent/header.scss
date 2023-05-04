@@ -35,33 +35,6 @@ header.scrolled {
     z-index: 3;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
-    @include media-container('sm-min') {
-        max-width: 540px;
-    }
-
-    @include media-container('md-min') {
-        max-width: 720px;
-    }
-
-    @include media-container('lg-min') {
-        max-width: 960px;
-    }
-}
-
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
 /* ----- Navbar ------------------------------- */
 .navbar {
     padding: 0.5rem 1rem;

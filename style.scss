@@ -1,6 +1,9 @@
 // Import color
 @import './scssComponent/colors.scss';
 
+// import screen media
+@import './scssComponent/screenMedia.scss';
+
 /* -----Base Style----------------------------------- */
 * {
     margin: 0 auto;
@@ -20,8 +23,39 @@ body {
     color: $primary-text-color;
 }
 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-container('sm-min') {
+        max-width: 540px;
+    }
+
+    @include media-container('md-min') {
+        max-width: 720px;
+    }
+
+    @include media-container('lg-min') {
+        max-width: 960px;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* -----Header Style----------------------------------- */
@@ -34,3 +68,6 @@ main {
 
 /* -----Home Style------------------------------------- */
 @import './scssComponent/home.scss';
+
+/* -----About Style------------------------------------- */
+@import './scssComponent/about.scss';
