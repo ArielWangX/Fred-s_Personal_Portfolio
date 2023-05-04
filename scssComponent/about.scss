@@ -1,0 +1,74 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- About ------------------------------- */
+.about__content {
+    padding: 60px 0;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- About Image ------------------------------- */
+.about__image {
+    flex: 1;
+    padding: 0 15px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* ----- About Info ------------------------------- */
+.about__info {
+    flex: 1;
+    padding: 0 15px;
+    padding-left: 50px;
+
+    h2 {
+        margin: 20px 0;
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .about__tags {
+        margin: 10px 0;
+
+        li {
+            margin: 0 6px;
+            margin-bottom: 10px;
+            padding: 4px 0;
+            display: inline-block;
+
+            span {
+                border: 1px solid $secondary-color-2;
+                padding: 4px 10px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    a {
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: $secondary-color-2;
+        padding: 8px 30px;
+        font-weight: bold;
+        color: $primary-text-color;
+        border-radius: 20px;
+        display: inline-block;
+
+        i {
+            margin-left: 10px;
+        }
+    }
+}
