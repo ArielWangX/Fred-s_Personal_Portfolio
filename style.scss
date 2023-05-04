@@ -20,6 +20,10 @@ body {
     color: $primary-text-color;
 }
 
+ul {
+    list-style: none;
+}
+
 /* -----Header Style----------------------------------- */
 @import './scssComponent/header.scss';
 

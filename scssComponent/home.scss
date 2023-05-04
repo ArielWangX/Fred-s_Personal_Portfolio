@@ -6,6 +6,7 @@
 
 /* ----- Home ------------------------------- */
 // .container same with .container in header section
+// .content-container same with .content-container in header section
 
 .home__content {
     display: flex;
@@ -16,28 +17,96 @@
 
 /* ----- Home Info ------------------------------- */
 .home__info {
-    padding-top: 100px;
+    padding: 0 15px;
     flex: 1;
+
+    .bubble-text {
+        background-color: $secondary-color-2;
+        line-height: 24px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 20px 20px 20px 0;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 3.75rem;
+        line-height: 65px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+
+    h4 {
+        font-size: 1.625rem;
+        line-height: 34px;
+        margin-bottom: 30px;
+    }
+
+    .home__contact-info {
+        margin: 20px 0;
+
+        li {
+            margin: 10px 0;
+
+
+            i {
+                margin-right: 15px;
+                display: inline-block;
+                font-size: inherit;
+            }
+
+            a {
+                text-decoration: none;
+                color: inherit;
+                padding: 0;
+                background: $secondary-background-color;
+                opacity: 0.9;
+            }
+        }
+    }
+
+    .home__social-icon {
+        li {
+            display: inline-block;
+
+            a {
+                text-align: center;
+                cursor: pointer;
+
+                i {
+                    color: $primary-text-color;
+                    font-size: 18px;
+                    line-height: 30px;
+                    padding: 4px 14px;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
 }
 
 /* ----- Home Photo ------------------------------- */
 .home__photo {
     flex: 1;
-}
-// .photo-border {
-//     border: 20px solid $photo-border-color;
-//     border-radius: 50%;
-//     height: 400px;
-//     width: 400px;
-//     margin: 0 auto;
 
-//     img {
-//         border: 20px solid $img-border-color;
-//         border-radius: 50%;
-//         text-align: center;
-//         margin: 0 auto;
-//         max-width: 100%;
-//         height: auto;
-//         vertical-align: middle;
-//     }
-// }
+    .photo-border {
+        margin: 0 auto;
+        border: 20px solid $photo-border-color;
+        border-radius: 50%;
+        height: 400px;
+        width: 400px;
+
+        img {
+            border: 20px solid $img-border-color;
+            border-radius: 50%;
+            float: none;
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+    }
+}
