@@ -1,0 +1,43 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- Home ------------------------------- */
+// .container same with .container in header section
+
+.home__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 180px 0;
+}
+
+/* ----- Home Info ------------------------------- */
+.home__info {
+    padding-top: 100px;
+    flex: 1;
+}
+
+/* ----- Home Photo ------------------------------- */
+.home__photo {
+    flex: 1;
+}
+// .photo-border {
+//     border: 20px solid $photo-border-color;
+//     border-radius: 50%;
+//     height: 400px;
+//     width: 400px;
+//     margin: 0 auto;
+
+//     img {
+//         border: 20px solid $img-border-color;
+//         border-radius: 50%;
+//         text-align: center;
+//         margin: 0 auto;
+//         max-width: 100%;
+//         height: auto;
+//         vertical-align: middle;
+//     }
+// }
