@@ -98,3 +98,14 @@
   height: auto;
   vertical-align: middle;
 }
+
+/* ----- Home Section Media ------------------------------- */
+@media (max-width: 767px) {
+  .home__content .home__photo {
+    order: -1;
+  }
+  .home__content .home__info {
+    text-align: center;
+    margin-top: 40px;
+  }
+}

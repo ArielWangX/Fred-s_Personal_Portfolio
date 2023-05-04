@@ -42,15 +42,15 @@ header.scrolled {
     margin-right: auto;
     margin-left: auto;
 
-    @include media-container('sm') {
+    @include media-container('sm-min') {
         max-width: 540px;
     }
 
-    @include media-container('md') {
+    @include media-container('md-min') {
         max-width: 720px;
     }
 
-    @include media-container('lg') {
+    @include media-container('lg-min') {
         max-width: 960px;
     }
 }

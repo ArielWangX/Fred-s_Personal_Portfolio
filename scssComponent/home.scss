@@ -110,3 +110,17 @@
         }
     }
 }
+
+/* ----- Home Section Media ------------------------------- */
+.home__content {
+    @include media-container('md-max') {
+        .home__photo {
+            order: -1;
+        }
+
+        .home__info {
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+}
