@@ -250,6 +250,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 180px 0;
+  padding-bottom: 80px;
 }
 
 /* ----- Home Info ------------------------------- */
@@ -423,4 +424,19 @@ main {
 
 .about__info a i {
   margin-left: 10px;
+}
+
+/* ----- About Section Media ------------------------------- */
+@media (max-width: 991px) {
+  .about__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__content {
+    flex-direction: column;
+    text-align: center;
+  }
 }

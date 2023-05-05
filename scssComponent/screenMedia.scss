@@ -31,6 +31,12 @@ $screen-md-max: 767px;
             @content;
         }
     }
+
+    @else if $breakpoint =='lg-max' {
+        @media (max-width: $screen-lg-max) {
+            @content;
+        }
+    } 
 }
 
 // media-hamburgerNavbar mixin
