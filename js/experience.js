@@ -10,3 +10,24 @@ for(let i = 0; i < cards.length; i++) {
         cards[i].classList.add('even');
     }
 }
+
+// Timeline --------------------------------------
+// Add 'show' class to the timeline element,
+// when experience card contents in the viewport, trigger the animation to show the timeline.
+function showTimeline() {
+    let timeline = document.querySelector('.timeline-container');
+    timeline.classList.add('show');
+}
+
+function handleScroll() {
+    let timeline = document.querySelector('.timeline-container');
+    let timelinePosition = timeline.getBoundingClientRect().top;
+    let screenHeight = window.innerHeight;
+
+    if (timelinePosition < screenHeight) {
+        showTimeline();
+        window.removeEventListener('scroll', handleScroll);
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
