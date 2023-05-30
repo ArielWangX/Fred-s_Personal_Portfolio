@@ -7,23 +7,23 @@
 /* ----- mixin ------------------------------- */
 // Card Arrow @mixin
 @mixin cardArrow($width, $height, $borderColor, $direction) {
-    height: 0;
-    width: 0;
-    position: absolute;
-    top: 20px;
-    z-index: 1;
-    border-top: $width solid transparent;
-    border-bottom: $width solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        top: 20px;
+        z-index: 1;
+        border-top: $width solid transparent;
+        border-bottom: $width solid transparent;
 
-    @if $direction =='left' {
-        border-left: $height solid $borderColor;
-    }
+        @if $direction =='right' {
+            border-left: $height solid $borderColor;
+        }
 
-    @else if $direction =='right' {
-        border-right: $height solid $borderColor;
-    }
+        @else if $direction =='left' {
+            border-right: $height solid $borderColor;
+        }
 
-    @content;
+        @content;
 }
 
 /* ----- Experience Title------------------------------- */
@@ -83,7 +83,7 @@
     }
 
     .text-box-arrow {
-        @include cardArrow(15px, 15px, $secondary-color-2, 'left') {
+        @include cardArrow(15px, 15px, $secondary-color-2, 'right') {
             right: -15px;
         }
     }
@@ -98,7 +98,7 @@
     }
 
     .text-box-arrow {
-        @include cardArrow(15px, 15px, $secondary-color-2, 'right') {
+        @include cardArrow(15px, 15px, $secondary-color-2, 'left') {
             left: -15px;
         }
     }
@@ -146,4 +146,43 @@
 .experience__text-box.show {
     transform: translateY(0);
     opacity: 1;
+}
+
+/* ----- @media ------------------------------- */
+// when the max screen size is 991px,
+// change the display on timeline and cards
+@include media-container('lg-max') {
+    .timeline-container {
+        margin: 20px 50px;
+    }
+
+    .timeline-container::after {
+        left: 0;
+    }
+
+    .experience__card-box {
+        width: 100%;
+    }
+
+    .card.odd {
+        padding-right: 0;
+        padding-left: 50px;
+
+        .company-icon {
+            right: auto;
+            left: -15px;
+        }
+
+        .text-box-arrow {
+            @include cardArrow(15px, 15px, $secondary-color-2, 'left') {
+                right: auto;
+                left: -15px;
+            }
+            border-left: none;
+        }
+    }
+
+    .card.even {
+        margin-left: 0;
+    }
 }

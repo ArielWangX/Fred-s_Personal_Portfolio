@@ -6,7 +6,6 @@
   margin-bottom: 85px;
   text-align: center;
 }
-
 .experience__title h2 {
   font-size: 2.8125rem;
   background: linear-gradient(to right, #0bceaf, #07f7f7);
@@ -26,7 +25,7 @@
 }
 
 .timeline-container::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #0bceaf;
   top: 0;
@@ -53,11 +52,9 @@
   margin-left: 0;
   padding-right: 50px;
 }
-
 .card.odd .company-icon {
   right: -15px;
 }
-
 .card.odd .text-box-arrow {
   height: 0;
   width: 0;
@@ -74,11 +71,9 @@
   margin-left: 50%;
   padding-left: 50px;
 }
-
 .card.even .company-icon {
   left: -15px;
 }
-
 .card.even .text-box-arrow {
   height: 0;
   width: 0;
@@ -119,12 +114,10 @@
   transition: transform 1s, opacity 1s;
   transform: translateY(-30px);
 }
-
 .experience__text-box h4 {
   font-size: 1.45rem;
   margin-bottom: 10px;
 }
-
 .experience__text-box small {
   display: inline-block;
   margin-bottom: 15px;
@@ -134,3 +127,40 @@
   transform: translateY(0);
   opacity: 1;
 }
+
+/* ----- @media ------------------------------- */
+@media (max-width: 991px) {
+  .timeline-container {
+    margin: 20px 50px;
+  }
+  .timeline-container::after {
+    left: 0;
+  }
+  .experience__card-box {
+    width: 100%;
+  }
+  .card.odd {
+    padding-right: 0;
+    padding-left: 50px;
+  }
+  .card.odd .company-icon {
+    right: auto;
+    left: -15px;
+  }
+  .card.odd .text-box-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #0bceaf;
+    right: auto;
+    left: -15px;
+    border-left: none;
+  }
+  .card.even {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=experience.css.map */

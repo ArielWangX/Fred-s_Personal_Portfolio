@@ -12,7 +12,6 @@
   flex: 1;
   padding: 0 15px;
 }
-
 .about__image img {
   max-width: 100%;
   height: auto;
@@ -24,34 +23,28 @@
   padding: 0 15px;
   padding-left: 50px;
 }
-
 .about__info h2 {
   margin: 20px 0;
   font-size: 2rem;
   line-height: 1.2;
 }
-
 .about__info p {
   margin-bottom: 30px;
 }
-
 .about__info .about__tags {
   margin: 10px 0;
 }
-
 .about__info .about__tags li {
   margin: 0 6px;
   margin-bottom: 10px;
   padding: 4px 0;
   display: inline-block;
 }
-
 .about__info .about__tags li span {
   border: 1px solid #0bceaf;
   padding: 4px 10px;
   border-radius: 4px;
 }
-
 .about__info a {
   margin-top: 20px;
   cursor: pointer;
@@ -62,7 +55,6 @@
   border-radius: 20px;
   display: inline-block;
 }
-
 .about__info a i {
   margin-left: 10px;
 }
@@ -74,10 +66,9 @@
     padding-bottom: 40px;
   }
 }
-
 @media (max-width: 767px) {
   .about__content {
     flex-direction: column;
     text-align: center;
   }
-}
+}/*# sourceMappingURL=about.css.map */

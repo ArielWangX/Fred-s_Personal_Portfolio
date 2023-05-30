@@ -68,7 +68,6 @@ header.scrolled {
   flex-grow: 1;
   align-items: center;
 }
-
 .navbar__links ul {
   list-style: none;
   margin-left: auto;
@@ -76,11 +75,9 @@ header.scrolled {
   display: flex;
   flex-direction: row;
 }
-
 .navbar__links ul li {
   margin: 0 1.25rem;
 }
-
 .navbar__links ul li a {
   text-decoration: none;
   color: #FFFFFF;
@@ -90,7 +87,6 @@ header.scrolled {
   cursor: pointer;
   background-color: transparent;
 }
-
 .navbar__links ul li a:hover {
   color: #0bceaf;
 }
@@ -175,4 +171,4 @@ header.scrolled {
   .navbar__links.visible {
     transform: translateX(320px);
   }
-}
+}/*# sourceMappingURL=header.css.map */
