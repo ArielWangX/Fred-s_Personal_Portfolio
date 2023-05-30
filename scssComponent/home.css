@@ -12,7 +12,6 @@
   padding: 0 15px;
   flex: 1;
 }
-
 .home__info .bubble-text {
   background-color: #0bceaf;
   line-height: 24px;
@@ -23,50 +22,41 @@
   display: inline-block;
   margin-bottom: 30px;
 }
-
 .home__info h2 {
   font-size: 3.75rem;
   line-height: 65px;
   font-weight: 600;
   margin: 10px 0;
 }
-
 .home__info h4 {
   font-size: 1.625rem;
   line-height: 34px;
   margin-bottom: 30px;
 }
-
 .home__info .home__contact-info {
   margin: 20px 0;
 }
-
 .home__info .home__contact-info li {
   margin: 10px 0;
 }
-
 .home__info .home__contact-info li i {
   margin-right: 15px;
   display: inline-block;
   font-size: inherit;
 }
-
 .home__info .home__contact-info li a {
   color: inherit;
   padding: 0;
   background: transparent;
   opacity: 0.9;
 }
-
 .home__info .home__social-icon li {
   display: inline-block;
 }
-
 .home__info .home__social-icon li a {
   text-align: center;
   cursor: pointer;
 }
-
 .home__info .home__social-icon li a i {
   color: #FFFFFF;
   font-size: 18px;
@@ -80,7 +70,6 @@
 .home__photo {
   flex: 1;
 }
-
 .home__photo .photo-border {
   margin: 0 auto;
   border: 20px solid rgba(0, 0, 0, 0.9);
@@ -88,7 +77,6 @@
   height: 400px;
   width: 400px;
 }
-
 .home__photo .photo-border img {
   border: 20px solid rgba(0, 0, 0, 0.4);
   border-radius: 50%;
@@ -108,4 +96,4 @@
     text-align: center;
     margin-top: 40px;
   }
-}
+}/*# sourceMappingURL=home.css.map */
