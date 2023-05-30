@@ -1,0 +1,123 @@
+/* ----- mixin ------------------------------- */
+/* ----- Experience Title------------------------------- */
+.experience__title {
+  display: initial;
+  padding: 0 15px;
+  margin-bottom: 85px;
+  text-align: center;
+}
+
+.experience__title h2 {
+  font-size: 2.8125rem;
+  background: linear-gradient(to right, #0bceaf, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----- Experience in Every Company------------------------------- */
+.experience__info {
+  display: initial;
+}
+
+/* ----- Timeline ------------------------------- */
+.timeline-container {
+  position: relative;
+  margin: 20px auto;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  background-color: #0bceaf;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  width: 4px;
+  height: 100%;
+}
+
+/* ----- Experience Cards------------------------------- */
+.experience__card-box {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.card.odd {
+  margin-left: 0;
+  padding-right: 50px;
+}
+
+.card.odd .company-icon {
+  right: -15px;
+}
+
+.card.odd .text-box-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #0bceaf;
+  right: -15px;
+}
+
+.card.even {
+  margin-left: 50%;
+  padding-left: 50px;
+}
+
+.card.even .company-icon {
+  left: -15px;
+}
+
+.card.even .text-box-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #0bceaf;
+  left: -15px;
+}
+
+.company-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #0bceaf;
+  border-radius: 50%;
+  background-color: #202026;
+}
+
+.icon-img {
+  width: 20px;
+  margin: 0 auto;
+}
+
+.experience__text-box {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #0bceaf;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.experience__text-box h4 {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.experience__text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}

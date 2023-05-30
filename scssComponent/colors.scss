@@ -4,7 +4,20 @@ $primary-background-color-2: #100e17;
 $secondary-background-color: transparent;
 $secondary-color-1: #009688;
 $secondary-color-2: #0bceaf;
+$secondary-color-3: #07f7f7;
 $overlay-background-color: rgba(0, 0, 0, 0.8);
 $photo-border-color: rgba(0, 0, 0, 0.9);
 $img-border-color: rgba(0, 0, 0, 0.4);
+$card-background-color: rgba(0, 0, 0, 0.3);
+//$gradient-color: linear-gradient(to right, #0bceaf, #07f7f7);
 $error-color: #ff4081;
+
+// gradient color mixin
+@mixin gradient-color($direction, $color1, $color2, $type) {
+    background: linear-gradient($direction, $color1, $color2);
+
+    @if $type == 'text' {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
