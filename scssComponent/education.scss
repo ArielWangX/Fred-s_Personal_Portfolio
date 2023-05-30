@@ -1,0 +1,75 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- Education ------------------------------- */
+.education__container {
+    margin: 30px auto;
+}
+
+/* ----- Education Title ------------------------------- */
+.education__title {
+    display: initial;
+    padding: 0 15px;
+    margin-bottom: 85px;
+    text-align: center;
+
+    h2 {
+        font-size: 2.8125rem;
+        @include gradient-color(to right, $secondary-color-2, $secondary-color-3, 'text');
+    }
+}
+
+/* ----- Education Cards ------------------------------- */
+.education__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+
+.education__card-box {
+    flex: 0 0 calc(50% - 10%);
+    background-color: $primary-background-color-1;
+    padding: 20px 30px;
+    border-radius: 4px;
+
+    h4 {
+        font-size: 1.4286rem;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        a {
+            font-style: italic;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-left: 4px;
+            color: $secondary-color-2;
+        }
+    }
+
+    .edu-year {
+        margin-bottom: 15px;
+        color: $secondary-color-2;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 23px;
+        opacity: 0.9;
+    }
+}
+
+/* ----- @media ------------------------------- */
+// when the max screen size is 767px,
+// change the display on cards
+@include media-container('md-max') {
+    .education__card-box {
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
