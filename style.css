@@ -477,6 +477,11 @@ main {
   left: 50%;
   margin-left: -3px;
   width: 4px;
+  height: 0;
+  transition: height 6s;
+}
+
+.timeline-container.show::after {
   height: 100%;
 }
 
