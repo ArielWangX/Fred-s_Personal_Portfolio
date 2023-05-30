@@ -1,0 +1,136 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- mixin ------------------------------- */
+// Card Arrow @mixin
+@mixin cardArrow($width, $height, $borderColor, $direction) {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    border-top: $width solid transparent;
+    border-bottom: $width solid transparent;
+
+    @if $direction == 'left' {
+        border-left: $height solid $borderColor;
+    } 
+    
+    @else if $direction == 'right' {
+        border-right: $height solid $borderColor;
+    }
+    
+    @content;
+}
+
+/* ----- Experience Title------------------------------- */
+.experience__title {
+    display: initial;
+    padding: 0 15px;
+    margin-bottom: 85px;
+    text-align: center;
+
+    h2 {
+        font-size: 2.8125rem;
+        @include gradient-color(to right, $secondary-color-2, $secondary-color-3, 'text');
+    }
+}
+
+/* ----- Experience in Every Company------------------------------- */
+.experience__info {
+    display: initial;
+}
+
+/* ----- Timeline ------------------------------- */
+.timeline-container {
+    position: relative;
+    margin: 20px auto;
+}
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    background-color: $secondary-color-2;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    width: 4px;
+    height: 100%;
+}
+
+/* ----- Experience Cards------------------------------- */
+.experience__card-box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    width: 50%;
+}
+
+.card.odd {
+    margin-left: 0;
+    padding-right: 50px;
+
+    .company-icon {
+        right: -15px;
+    }
+
+    .text-box-arrow {
+        @include cardArrow(15px, 15px, $secondary-color-2, 'left') {
+            right: -15px;
+        }
+    }
+}
+
+.card.even {
+    margin-left: 50%;
+    padding-left: 50px;
+ 
+    .company-icon {
+        left: -15px;
+    }
+
+    .text-box-arrow {
+        @include cardArrow(15px, 15px, $secondary-color-2, 'right') {
+            left: -15px;
+        }
+    }
+}
+
+.company-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $secondary-color-2;
+    border-radius: 50%;
+    background-color: $primary-background-color-1;
+}
+
+.icon-img {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.experience__text-box {
+    padding: 20px 30px;
+    position: relative;
+    border-radius: 6px;
+    border: 1px solid $secondary-color-2;
+    background: $card-background-color;
+
+    h4 {
+        font-size: 1.45rem;
+        margin-bottom: 10px;
+    }
+
+    small {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+}
