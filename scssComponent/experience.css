@@ -115,6 +115,9 @@
   border-radius: 6px;
   border: 1px solid #0bceaf;
   background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
+  transform: translateY(-30px);
 }
 
 .experience__text-box h4 {
@@ -125,4 +128,9 @@
 .experience__text-box small {
   display: inline-block;
   margin-bottom: 15px;
+}
+
+.experience__text-box.show {
+  transform: translateY(0);
+  opacity: 1;
 }
