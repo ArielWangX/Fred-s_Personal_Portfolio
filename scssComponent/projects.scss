@@ -35,3 +35,70 @@
         }
     }
 }
+
+/* ----- Projects Items ------------------------------- */
+.grid-container {
+    width: 100%;
+    columns: 3;
+    column-gap: 10px;
+}
+
+.grid-item {
+    padding: 5px;
+    border: 1.8px solid $secondary-color-2;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 8px;
+
+    img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+.single-project {
+    position: relative;
+}
+
+.project__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $project-img-cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    i,
+    h4,
+    span {
+        margin-bottom: 10px;
+    }
+
+    i {
+        font-size: 1.5rem;
+        line-height: 35px;
+    }
+
+    h4 {
+        font-size: 1.333rem;
+        line-height: 30px;
+    }
+
+    span {
+        font-size: 0.928rem;
+        opacity: 0.8;
+    }
+}
+
+.single-project:hover .project__hover {
+    opacity: 1;
+}

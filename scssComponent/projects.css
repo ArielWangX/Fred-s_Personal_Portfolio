@@ -32,4 +32,70 @@
 }
 .projects__nav ul li.current span {
   border-bottom: 2px solid #0bceaf;
+}
+
+/* ----- Projects Items ------------------------------- */
+.grid-container {
+  width: 100%;
+  -moz-columns: 3;
+       columns: 3;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.grid-item {
+  padding: 5px;
+  border: 1.8px solid #0bceaf;
+  margin-bottom: 10px;
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+  border-radius: 8px;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.single-project {
+  position: relative;
+}
+
+.project__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11, 206, 175, 0.8);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.project__hover i,
+.project__hover h4,
+.project__hover span {
+  margin-bottom: 10px;
+}
+.project__hover i {
+  font-size: 1.5rem;
+  line-height: 35px;
+}
+.project__hover h4 {
+  font-size: 1.333rem;
+  line-height: 30px;
+}
+.project__hover span {
+  font-size: 0.928rem;
+  opacity: 0.8;
+}
+
+.single-project:hover .project__hover {
+  opacity: 1;
 }/*# sourceMappingURL=projects.css.map */
