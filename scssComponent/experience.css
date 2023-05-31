@@ -1,18 +1,20 @@
-/* ----- mixin ------------------------------- */
-/* ----- Experience Title------------------------------- */
-.experience__title {
+/* ----- Title Template ------------------------------- */
+.title {
   display: initial;
   padding: 0 15px;
   margin-bottom: 85px;
   text-align: center;
 }
-.experience__title h2 {
+.title h2 {
   font-size: 2.8125rem;
+  margin-bottom: 60px;
   background: linear-gradient(to right, #0bceaf, #07f7f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* ----- mixin ------------------------------- */
+/* ----- Experience Title------------------------------- */
 /* ----- Experience in Every Company------------------------------- */
 .experience__info {
   display: initial;
@@ -22,6 +24,7 @@
 .timeline-container {
   position: relative;
   margin: 20px auto;
+  margin-bottom: 100px;
 }
 
 .timeline-container::after {

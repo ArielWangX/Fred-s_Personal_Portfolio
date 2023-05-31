@@ -1,22 +1,24 @@
+/* ----- Title Template ------------------------------- */
+.title {
+  display: initial;
+  padding: 0 15px;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.title h2 {
+  font-size: 2.8125rem;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #0bceaf, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* ----- Education ------------------------------- */
 .education__container {
   margin: 30px auto;
 }
 
 /* ----- Education Title ------------------------------- */
-.education__title {
-  display: initial;
-  padding: 0 15px;
-  margin-bottom: 85px;
-  text-align: center;
-}
-.education__title h2 {
-  font-size: 2.8125rem;
-  background: linear-gradient(to right, #0bceaf, #07f7f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* ----- Education Cards ------------------------------- */
 .education__info {
   display: flex;
@@ -25,6 +27,7 @@
   align-items: stretch;
   width: 100%;
   margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .education__card-box {

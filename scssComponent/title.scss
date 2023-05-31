@@ -1,0 +1,19 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- Title Template ------------------------------- */
+.title {
+    display: initial;
+    padding: 0 15px;
+    margin-bottom: 85px;
+    text-align: center;
+
+    h2 {
+        font-size: 2.8125rem;
+        margin-bottom: 60px;
+        @include gradient-color(to right, $secondary-color-2, $secondary-color-3, 'text');
+    }
+}

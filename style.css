@@ -341,6 +341,7 @@ main {
 .about__content {
   padding: 60px 0;
   padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,21 +414,23 @@ main {
 }
 
 /* -----Experience Style------------------------------------- */
-/* ----- mixin ------------------------------- */
-/* ----- Experience Title------------------------------- */
-.experience__title {
+/* ----- Title Template ------------------------------- */
+.title {
   display: initial;
   padding: 0 15px;
   margin-bottom: 85px;
   text-align: center;
 }
-.experience__title h2 {
+.title h2 {
   font-size: 2.8125rem;
+  margin-bottom: 60px;
   background: linear-gradient(to right, #0bceaf, #07f7f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* ----- mixin ------------------------------- */
+/* ----- Experience Title------------------------------- */
 /* ----- Experience in Every Company------------------------------- */
 .experience__info {
   display: initial;
@@ -437,6 +440,7 @@ main {
 .timeline-container {
   position: relative;
   margin: 20px auto;
+  margin-bottom: 100px;
 }
 
 .timeline-container::after {
@@ -580,25 +584,27 @@ main {
   }
 }
 /* -----Education Style------------------------------------- */
+/* ----- Title Template ------------------------------- */
+.title {
+  display: initial;
+  padding: 0 15px;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.title h2 {
+  font-size: 2.8125rem;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #0bceaf, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* ----- Education ------------------------------- */
 .education__container {
   margin: 30px auto;
 }
 
 /* ----- Education Title ------------------------------- */
-.education__title {
-  display: initial;
-  padding: 0 15px;
-  margin-bottom: 85px;
-  text-align: center;
-}
-.education__title h2 {
-  font-size: 2.8125rem;
-  background: linear-gradient(to right, #0bceaf, #07f7f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 /* ----- Education Cards ------------------------------- */
 .education__info {
   display: flex;
@@ -606,6 +612,8 @@ main {
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .education__card-box {
@@ -643,4 +651,40 @@ main {
     flex: 0 0 100%;
     margin-bottom: 20px;
   }
+}
+/* -----Projects Style------------------------------------- */
+/* ----- Title Template ------------------------------- */
+.title {
+  display: initial;
+  padding: 0 15px;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.title h2 {
+  font-size: 2.8125rem;
+  margin-bottom: 60px;
+  background: linear-gradient(to right, #0bceaf, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----- Projects Title ------------------------------- */
+/* ----- Projects Nav ------------------------------- */
+.projects__nav {
+  margin-bottom: 50px;
+}
+.projects__nav ul {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.projects__nav ul li {
+  cursor: pointer;
+}
+.projects__nav ul li span {
+  border-bottom: 2px solid transparent;
+  padding: 15px 0;
+}
+.projects__nav ul li.current span {
+  border-bottom: 2px solid #0bceaf;
 }/*# sourceMappingURL=style.css.map */
