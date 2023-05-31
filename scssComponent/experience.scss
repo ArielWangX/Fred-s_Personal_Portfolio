@@ -4,6 +4,9 @@
 // import screen media
 @import 'screenMedia';
 
+// import title template
+@import 'title';
+
 /* ----- mixin ------------------------------- */
 // Card Arrow @mixin
 @mixin cardArrow($width, $height, $borderColor, $direction) {
@@ -27,17 +30,7 @@
 }
 
 /* ----- Experience Title------------------------------- */
-.experience__title {
-    display: initial;
-    padding: 0 15px;
-    margin-bottom: 85px;
-    text-align: center;
-
-    h2 {
-        font-size: 2.8125rem;
-        @include gradient-color(to right, $secondary-color-2, $secondary-color-3, 'text');
-    }
-}
+// using title template
 
 /* ----- Experience in Every Company------------------------------- */
 .experience__info {
@@ -48,6 +41,7 @@
 .timeline-container {
     position: relative;
     margin: 20px auto;
+    margin-bottom: 100px;
 }
 
 .timeline-container::after {

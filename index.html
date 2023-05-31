@@ -157,7 +157,7 @@
         <section class="experience" id="experience">
             <div class="container">
                 <!-- Experience Title -->
-                <div class="experience__title content-container">
+                <div class="experience__title title content-container">
                     <h2>Work Experience</h2>
                 </div>
                 <!-- Experience in Every Company -->
@@ -255,7 +255,7 @@
         <section class="eduction" id="education">
             <div class="container education__container">
                 <!-- Education Title -->
-                <div class="education__title content-container">
+                <div class="education__title title content-container">
                     <h2>Education</h2>
                 </div>
                 <!-- Education items -->
@@ -278,152 +278,238 @@
             </div>
         </section>
         <section class="projects" id="projects">
-            <div class="projects__title-container">
+            <div class="container">
                 <!-- Projects Title -->
-                <h2>Some Of My Works</h2>
-            </div>
-            <div class="projects__projects-container">
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
-                        </div>
-                    </div>
+                <div class="projects__title title content-container">
+                    <h2>Recent Portfolio</h2>
                 </div>
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
-                        </div>
-                    </div>
+                <!-- Projects nav -->
+                <div class="projects__nav navbar navbar__links">
+                    <ul id="projects__navList">
+                        <li data-filter="*" class="current">
+                            <span>All Categories</span>
+                        </li>
+                        <li data-filter="android">
+                            <span>Android</span>
+                        </li>
+                        <li data-filter="smart-contract">
+                            <span>Smart Contract</span>
+                        </li>
+                        <li data-filter="block-chain">
+                            <span>Block Chain</span>
+                        </li>
+                        <li data-filter="mockup">
+                            <span>Mockups</span>
+                        </li>
+                    </ul>
                 </div>
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                <!-- Projects items -->
+                <div class="projects__projects-container">
+                    <div class="single-project android">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
                         </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                    <div class="single-project smart-contract">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
                         </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!-- Project Single -->
-                <div class="projects__project-single">
-                    <!-- Project Image -->
-                    <div class="project__image">
-                        <img src="" alt="" />
-                    </div>
-                    <!-- Project Content Hover -->
-                    <div class="project__content-hover">
-                        <!-- Project Hover: button -->
-                        <div class="project__btn-hvr">
-                            <a href="" class="project__icon-link">
-                                <i class="fa fa-search-plus"></i>
-                            </a>
-                            <a href="" class="project__icon-link">
-                                <i class="fa-brands fa-github"></i>
-                            </a>
+                    <div class="single-project block-chain">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
                         </div>
-                        <!-- Project Hover: text -->
-                        <div class="project__text">
-                            <h4>Project Name</h4>
-                            <p>Logo Design</p>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project android">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project mockup">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project mockup">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project smart-contract">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project android">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-project android">
+                        <!-- Project Image -->
+                        <div class="project__image">
+                            <img src="" alt="" />
+                        </div>
+                        <!-- Project Content Hover -->
+                        <div class="project__content-hover">
+                            <!-- Project Hover: button -->
+                            <div class="project__btn-hvr">
+                                <a href="" class="project__icon-link">
+                                    <i class="fa fa-search-plus"></i>
+                                </a>
+                                <a href="" class="project__icon-link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </div>
+                            <!-- Project Hover: text -->
+                            <div class="project__text">
+                                <h4>Project Name</h4>
+                                <p>Logo Design</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -492,6 +578,8 @@
     <script src="./js/navbar.js"></script>
     <!-- Experience JS -->
     <script src="./js/experience.js"></script>
+    <!-- Projects JS -->
+    <script src="./js/projects.js"></script>
 </body>
 
 </html>
