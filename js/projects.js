@@ -24,7 +24,7 @@ function filterProjects(filterValue) {
 }
 
 // Projects Navbar Adding Bottom Line --------------------------------------
-// when click the navbar item,
+// When click the navbar item,
 // Add the bottome line.
 function addBottomLine(clickedItem) {
     navList.forEach(function(item) {
@@ -32,3 +32,22 @@ function addBottomLine(clickedItem) {
     });
     clickedItem.classList.add('current');
 }
+
+// Display Projects Overlay Container --------------------------------------
+// When clicking a card in project gallery,
+// display the overlay container.
+// when clicking a close button on overlay container,
+// close the overlay container
+const overlayContainer = document.querySelector('.projects__overlay-container');
+const projectCards = document.querySelectorAll('.single-project');
+const closeButton = overlayContainer.querySelector('.close-btn');
+
+projectCards.forEach((card) => {
+    card.addEventListener('click', function() {
+        overlayContainer.classList.add('active');
+    });
+});
+
+closeButton.addEventListener('click', function() {
+    overlayContainer.classList.remove('active');
+});

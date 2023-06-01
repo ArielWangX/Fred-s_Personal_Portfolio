@@ -103,6 +103,15 @@
     opacity: 1;
 }
 
+/* ----- Overlay Container ------------------------------- */
+.projects__overlay-container {
+    display: none;
+}
+
+.projects__overlay-container.active {
+    display: block;
+}
+
 /* ----- @media ------------------------------- */
 // when the screen size is smaller then 991px,
 // change the project gallery column 3 to column 2
@@ -119,4 +128,3 @@
         columns: 1;
     }
 }
-
