@@ -755,6 +755,15 @@ main {
   opacity: 1;
 }
 
+/* ----- Overlay Container ------------------------------- */
+.projects__overlay-container {
+  display: none;
+}
+
+.projects__overlay-container.active {
+  display: block;
+}
+
 /* ----- @media ------------------------------- */
 @media (max-width: 991px) {
   .grid-container {
