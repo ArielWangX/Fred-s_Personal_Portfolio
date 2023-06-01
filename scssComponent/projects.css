@@ -98,4 +98,18 @@
 
 .single-project:hover .project__hover {
   opacity: 1;
+}
+
+/* ----- @media ------------------------------- */
+@media (max-width: 991px) {
+  .grid-container {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media (max-width: 767px) {
+  .grid-container {
+    -moz-columns: 1;
+         columns: 1;
+  }
 }/*# sourceMappingURL=projects.css.map */
