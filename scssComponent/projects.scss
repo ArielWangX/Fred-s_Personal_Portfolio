@@ -102,3 +102,21 @@
 .single-project:hover .project__hover {
     opacity: 1;
 }
+
+/* ----- @media ------------------------------- */
+// when the screen size is smaller then 991px,
+// change the project gallery column 3 to column 2
+@include media-container('lg-max') {
+    .grid-container {
+        columns: 2;
+    }
+}
+
+// when the screen size is smaller then 767px,
+// change the project gallery column 2 to column 1
+@include media-container('md-max') {
+    .grid-container {
+        columns: 1;
+    }
+}
+
