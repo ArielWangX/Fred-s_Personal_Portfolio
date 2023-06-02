@@ -106,13 +106,109 @@
 /* ----- Overlay Container ------------------------------- */
 .projects__overlay-container {
     display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $overlay-background-color;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    z-index: 99;
+    overflow-y: auto;
+
+    .overlay-container-demoOnly {
+        position: fixed;
+        padding: 44px;
+        width: 1200px;
+        height: 700px;
+        background-color: $primary-background-color-1;
+
+        .project-content {
+            width: 100%;
+            height: 100%;
+            margin-right: 0;
+            margin-left: 0;
+            overflow-y: scroll;
+            grid-gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .text-content {
+                padding: 0 15px;
+                font-size: 0.875rem;
+
+                h2 {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    font-size: 2rem;
+                }
+
+                p {
+                    margin-bottom: 16px;
+                    line-height: 1.5;
+                    opacity: 0.9;
+                }
+
+                .btn {
+                    margin-top: 20px;
+                    cursor: pointer;
+                    background-color: $secondary-color-2;
+                    padding: 8px 30px;
+                    font-size: 1rem;
+                    color: $primary-text-color;
+                    border-radius: 20px;
+                    display: inline-block;
+                }
+            }
+
+            .img-content {
+                padding: 0 15px;
+
+                img {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    margin-bottom: 16px;
+                    opacity: 0.9;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .close-btn {
+            padding: 10px;
+            background-color: $primary-background-color-1;
+            border: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            i {
+                color: $primary-text-color;
+                font-size: 1.4rem;
+            }
+        }
+    }
 }
 
 .projects__overlay-container.active {
-    display: block;
+    display: flex;
 }
 
-/* ----- @media ------------------------------- */
+.project-content::-webkit-scrollbar {
+    width: 10px;
+    background-color: $overlay-scrollBar-background;
+}
+
+.project-content::-webkit-scrollbar-thumb {
+    background-color: $overlay-scrollBar-thumb;
+    border-radius: 5px;
+}
+
+/* ----- @media ------------------------------------------ */
 // when the screen size is smaller then 991px,
 // change the project gallery column 3 to column 2
 @include media-container('lg-max') {

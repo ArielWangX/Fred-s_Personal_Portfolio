@@ -5,6 +5,7 @@
   margin-bottom: 85px;
   text-align: center;
 }
+
 .title h2 {
   font-size: 2.8125rem;
   margin-bottom: 60px;
@@ -18,18 +19,22 @@
 .projects__nav {
   margin-bottom: 50px;
 }
+
 .projects__nav ul {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
+
 .projects__nav ul li {
   cursor: pointer;
 }
+
 .projects__nav ul li span {
   border-bottom: 2px solid transparent;
   padding: 15px 0;
 }
+
 .projects__nav ul li.current span {
   border-bottom: 2px solid #0bceaf;
 }
@@ -37,25 +42,22 @@
 /* ----- Projects Items ------------------------------- */
 .grid-container {
   width: 100%;
-  -moz-columns: 3;
-       columns: 3;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  columns: 3;
+  column-gap: 10px;
 }
 
 .grid-item {
   padding: 5px;
   border: 1.8px solid #0bceaf;
   margin-bottom: 10px;
-  -moz-column-break-inside: avoid;
-       break-inside: avoid;
+  break-inside: avoid;
   border-radius: 8px;
 }
+
 .grid-item img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -78,19 +80,23 @@
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
 .project__hover i,
 .project__hover h4,
 .project__hover span {
   margin-bottom: 10px;
 }
+
 .project__hover i {
   font-size: 1.5rem;
   line-height: 35px;
 }
+
 .project__hover h4 {
   font-size: 1.333rem;
   line-height: 30px;
 }
+
 .project__hover span {
   font-size: 0.928rem;
   opacity: 0.8;
@@ -103,22 +109,117 @@
 /* ----- Overlay Container ------------------------------- */
 .projects__overlay-container {
   display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+  z-index: 99;
+  overflow-y: auto;
+}
+
+.projects__overlay-container .overlay-container-demoOnly {
+  position: fixed;
+  padding: 44px;
+  width: 1200px;
+  height: 700px;
+  background-color: #202026;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content {
+  width: 100%;
+  height: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  overflow-y: scroll;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .text-content {
+  padding: 0 15px;
+  font-size: 0.875rem;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .text-content h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .text-content p {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .text-content .btn {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #0bceaf;
+  padding: 8px 30px;
+  font-size: 1rem;
+  color: #FFFFFF;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .img-content {
+  padding: 0 15px;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .img-content img {
+  margin-bottom: 20px;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .project-content .img-content p {
+  margin-bottom: 16px;
+  opacity: 0.9;
+  font-size: 0.875rem;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .close-btn {
+  padding: 10px;
+  background-color: #202026;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.projects__overlay-container .overlay-container-demoOnly .close-btn i {
+  color: #FFFFFF;
+  font-size: 1.4rem;
 }
 
 .projects__overlay-container.active {
-  display: block;
+  display: flex;
 }
 
-/* ----- @media ------------------------------- */
+.project-content::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f2f2f2;
+}
+
+.project-content::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* ----- @media ------------------------------------------ */
 @media (max-width: 991px) {
   .grid-container {
-    -moz-columns: 2;
-         columns: 2;
+    columns: 2;
   }
 }
+
 @media (max-width: 767px) {
   .grid-container {
-    -moz-columns: 1;
-         columns: 1;
+    columns: 1;
   }
-}/*# sourceMappingURL=projects.css.map */
+}
