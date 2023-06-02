@@ -956,6 +956,7 @@ main {
   z-index: 2;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .contact-form form {
@@ -1025,4 +1026,20 @@ main {
   border-radius: 20px;
   width: 100%;
   opacity: 0.65;
+}
+
+/* ----- @media ------------------------------- */
+@media (max-width: 991px) {
+  .contact-form {
+    width: 100%;
+    text-align: center;
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contact-name {
+    flex-basis: 100%;
+  }
 }
