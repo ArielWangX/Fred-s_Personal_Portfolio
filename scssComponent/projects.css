@@ -44,6 +44,7 @@
   width: 100%;
   columns: 3;
   column-gap: 10px;
+  margin-bottom: 100px;
 }
 
 .grid-item {
