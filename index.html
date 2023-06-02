@@ -466,7 +466,7 @@
                         <img src="./images/contact_img/contact-img.png" alt="" />
                     </div>
                     <div class="contact-form">
-                        <form action="MAILTO:787978808wx@gmail.com" method="post" enctype="text/plain">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="form">
                                 <div class="form-row">
                                     <input type="text" id="fName" name="fName" class="contact-name form-control"
@@ -530,6 +530,9 @@
     <script src="./js/experience.js"></script>
     <!-- Projects JS -->
     <script src="./js/projects.js"></script>
+    <!-- Contact JS -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
