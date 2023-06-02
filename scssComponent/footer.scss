@@ -1,0 +1,42 @@
+// Import color
+@import 'colors';
+
+// import screen media
+@import 'screenMedia';
+
+/* ----- Footer ------------------------------- */
+footer .container {
+    display: flex;
+    flex-direction: row;
+
+    .footer__copyright-area {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+
+        p {
+            opacity: 0.9;
+        }
+    }
+
+    .footer__icons {
+        li {
+            display: inline-block;
+
+            a {
+                text-align: center;
+                cursor: pointer;
+
+                i {
+                    color: $primary-text-color;
+                    font-size: 1rem;
+                    line-height: 30px;
+                    padding: 4px 14px;
+                    margin-right: 10px;
+                    border-radius: 3px;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
