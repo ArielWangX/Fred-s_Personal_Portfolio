@@ -1088,3 +1088,7 @@ footer .container .footer__icons li a i {
   border-radius: 3px;
   opacity: 0.9;
 }
+
+footer {
+  margin-bottom: 60px;
+}
