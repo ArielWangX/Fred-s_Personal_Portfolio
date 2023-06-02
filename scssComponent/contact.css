@@ -104,9 +104,12 @@
 
 /* ----- @media ------------------------------- */
 @media (max-width: 991px) {
+  .contact-img {
+    display: none;
+  }
   .contact-form {
     width: 100%;
-    text-align: center;
+    position: relative;
   }
   .form-row {
     display: flex;
