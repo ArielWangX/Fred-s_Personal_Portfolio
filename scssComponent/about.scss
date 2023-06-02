@@ -41,23 +41,6 @@
         margin-bottom: 30px;
     }
 
-    .about__tags {
-        margin: 10px 0;
-
-        li {
-            margin: 0 6px;
-            margin-bottom: 10px;
-            padding: 4px 0;
-            display: inline-block;
-
-            span {
-                border: 1px solid $secondary-color-2;
-                padding: 4px 10px;
-                border-radius: 4px;
-            }
-        }
-    }
-
     a {
         margin-top: 20px;
         cursor: pointer;
@@ -70,6 +53,23 @@
 
         i {
             margin-left: 10px;
+        }
+    }
+}
+
+.about__tags {
+    margin: 10px 0;
+
+    li {
+        margin: 0 6px;
+        margin-bottom: 10px;
+        padding: 4px 0;
+        display: inline-block;
+
+        span {
+            border: 1px solid $secondary-color-2;
+            padding: 4px 10px;
+            border-radius: 4px;
         }
     }
 }
