@@ -99,9 +99,13 @@
 
 /* ----- @media ------------------------------- */
 @include media-container('lg-max') {
+    .contact-img {
+        display: none;
+    }
+
     .contact-form {
         width: 100%;
-        text-align: center;
+        position: relative;
     }
 
     .form-row {
