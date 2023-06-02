@@ -458,24 +458,42 @@
         <section class="contact" id="contact">
             <div class="container">
                 <!-- Title: Contact Me -->
-                <h2>Contact Me</h2>
-                <div class="form-center">
-                    <form action="MAILTO:787978808wx@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" id="fName" name="fName" class="contact-name form-control"
-                            placeholder="First Name" required>
-                        <input type="text" id="lName" name="lName" class="contact-name form-control"
-                            placeholder="Last Name" required>
-                        <input type="email" id="email" name="email" class="contact-email form-control"
-                            placeholder="Your Email" required>
-                        <textarea id="message" name="message" class="contact-message form-control"
-                            placeholder="Your Message"></textarea>
-                        <!-- Submit Btn -->
-                        <div class="form-submit">
-                            <div id="success"></div>
-                            <button type="submit" class="form-btn">Send Message</button>
-                        </div>
-                    </form>
+                <div class="contact__title title">
+                    <h2>Contact Me</h2>
                 </div>
+                <div class="contact-content">
+                    <div class="contact-img">
+                        <img src="./images/contact_img/contact-img.png" alt="" />
+                    </div>
+                    <div class="contact-form">
+                        <form action="MAILTO:787978808wx@gmail.com" method="post" enctype="text/plain">
+                            <div class="form">
+                                <div class="form-row">
+                                    <input type="text" id="fName" name="fName" class="contact-name form-control"
+                                        placeholder="First Name" required>
+                                    <input type="text" id="lName" name="lName" class="contact-name form-control"
+                                        placeholder="Last Name" required>
+                                </div>
+                                <div class="form-row">
+                                    <input type="email" id="email" name="email" class="contact-email form-control"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="form-row">
+                                    <textarea id="message" name="message" class="contact-message form-control"
+                                        placeholder="Your Message" rows="5"></textarea>
+                                </div>
+                                <!-- Submit Btn -->
+                                <div class="form-row form-submit">
+                                    <button type="submit" class="form-btn">Send Message</button>
+                                </div>
+                                <div class="form-row form-submitMessage">
+                                    <div id="success"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
     </main>
