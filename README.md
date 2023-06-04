@@ -32,8 +32,9 @@ https://github.com/ArielWangX/Fred-s_Personal_Portfolio/assets/109891752/ac11165
 https://github.com/ArielWangX/Fred-s_Personal_Portfolio/assets/109891752/21ff4651-c7e0-4e22-8b81-098d30b2afc6
 
 - Education Section (Responsive Content)
+<img width="1155" alt="Education" src="https://github.com/ArielWangX/Fred-s_Personal_Portfolio/assets/109891752/87b3862c-8e54-4445-a8d0-4341c973a91e">
 
-- Projects Section (Responsive Content, Mansory Card Display)
+- Projects Section (Responsive Content, Mansory Card Display, Data Filter Navbar)
 
 https://github.com/ArielWangX/Fred-s_Personal_Portfolio/assets/109891752/8e21f0c7-442e-41e3-8387-09d00bca0c1b
 
