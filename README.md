@@ -1,6 +1,9 @@
 # Fred-s_Personal_Portfolio
 Create a responsive static personal portfolio web page template.
 
+### Deployed on the AWS S3
+[AWS S3 - Personal Portfolio Template](http://self-learning-host-static-website-fred-portfolio.s3-website-ap-southeast-2.amazonaws.com)
+
 ### Deployed on the GitHub Page
 [GitHub Page - Personal Portfolio Template](https://arielwangx.github.io/Fred-s_Personal_Portfolio/)
 
